@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\Lenovo\OneDrive\Desktop\Task1\pics.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/027/446/877/small/sunset-silhouette-of-a-girlgrapher-free-photo.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="image">
+        <div class="pic">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/027/446/877/small/sunset-silhouette-of-a-girlgrapher-free-photo.jpg" onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://cdn.pixabay.com/photo/2018/08/31/18/21/fantasy-3645269_640.jpg"  onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://cdn.pixabay.com/photo/2018/01/10/13/22/energy-3073847_1280.jpg"  onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://cdn.pixabay.com/photo/2017/01/12/06/25/birds-1973872_1280.jpg"  onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://cdn.pixabay.com/user/2014/05/07/00-10-34-2_250x250.jpg"  onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://cdn.pixabay.com/photo/2017/11/29/15/54/wallpaper-2986490_1280.jpg"  onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://cdn.pixabay.com/photo/2023/06/16/11/09/ai-generated-8067773_1280.jpg"  onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUa9KMie-maK6RHgdmhW2C2zO6SclGNafBFA&s"  onclick="openFullImg(this.src)">
+        </div>
+        <div class="pic">
+            <img src="https://i.pinimg.com/564x/9c/fa/82/9cfa8231684a7d7cf473d1db9ba398c2.jpg"  onclick="openFullImg(this.src)">
+        </div>
+    </div>
+    <script>
+        var fullImgBox=document.getElementById("fullImgBox");
+        var fullImg=document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display="flex";
+            fullImg.src=pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display="none";
+        }
+    </script>
+</body>
+</html>
