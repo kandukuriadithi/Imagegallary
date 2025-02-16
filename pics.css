@@ -1,0 +1,81 @@
+.image{
+    height: 62 0px;
+    width:620px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-top:0% ;
+    margin-bottom: 0%;
+    margin-right: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-left: 1px;
+    flex-wrap: wrap;
+
+    
+}
+img{
+    height: 200px;
+    width:200px ;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.pic{
+    height: fit-content;
+}
+img pic:hover{
+    transform : scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+
+    top: 0;
+    left: 0;
+}
+.full-img{
+    width:100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img{
+    height: 100%;
+    width: 100%;
+    max-width:500px;
+    transition: 0.3s ease-in-out;
+    animation: moveUpDown 3s infinite ease-in-out;
+}
+.full-img span{
+    position:absolute;
+    top: 5%;
+    right: 5%;
+    font-size: medium30px;
+    color: #fff;
+    cursor: pointer;
+}
+@keyframes moveUpDown {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(0px);  
+    }
+}
+.image{
+    grid-template-columns: repeat(3,1fr);
+}
+img:hover{
+      transform: scale(0.8)
+    rotatex(10deg)
+    rotatey(10deg);
+}
